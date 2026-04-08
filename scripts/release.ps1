@@ -63,6 +63,9 @@ Copy-Item -LiteralPath $pdfboxJar -Destination $pdfboxStagePath -Force
 Copy-Item -LiteralPath (Join-Path $root "README.md") -Destination (Join-Path $stageRoot "README.md") -Force
 Copy-Item -LiteralPath (Join-Path $root "CHANGELOG.md") -Destination (Join-Path $stageRoot "CHANGELOG.md") -Force
 Copy-Item -LiteralPath (Join-Path $root "VERSION") -Destination (Join-Path $stageRoot "VERSION") -Force
+Copy-Item -LiteralPath (Join-Path $root "LICENSE") -Destination (Join-Path $stageRoot "LICENSE") -Force
+Copy-Item -LiteralPath (Join-Path $root "NOTICE") -Destination (Join-Path $stageRoot "NOTICE") -Force
+Copy-Item -LiteralPath (Join-Path $root "THIRD_PARTY_NOTICES.md") -Destination (Join-Path $stageRoot "THIRD_PARTY_NOTICES.md") -Force
 
 if (Test-Path $releaseNotesSource) {
   Copy-Item -LiteralPath $releaseNotesSource -Destination $releaseNotesTarget -Force
