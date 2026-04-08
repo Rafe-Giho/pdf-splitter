@@ -7,11 +7,27 @@
 ```bash
 git clone https://github.com/Rafe-Giho/pdf-splitter.git
 cd pdf-splitter
+git checkout codex/macos-bringup
 ```
 
 이미 받아둔 저장소가 있으면:
 
 ```bash
+git checkout codex/macos-bringup
+git pull origin codex/macos-bringup
+```
+
+처음 브랜치가 로컬에 없으면:
+
+```bash
+git fetch origin
+git checkout -b codex/macos-bringup origin/codex/macos-bringup
+```
+
+안정 브랜치 최신 내용을 보고 싶으면:
+
+```bash
+git checkout master
 git pull origin master
 ```
 
@@ -81,6 +97,13 @@ go run ./cmd/pdfsplitter
 - 썸네일이 생성되는지
 - 분할 실행이 되는지
 
+Codex 세션을 시작할 때는 아래 문서를 먼저 읽으면 됩니다.
+
+- `AGENTS.md`
+- `PROJECT.md`
+- `CONTRIBUTING.md`
+- `MACOS_SETUP.md`
+
 ## 5. macOS 빌드
 
 ```bash
@@ -112,7 +135,13 @@ Apple Silicon이 기본값이고, Intel이면 아키텍처를 명시합니다.
 4. macOS 전용 문제 정리
 5. 이후 `.app` 번들링과 서명 작업 진행
 
-## 8. 권장 점검 명령
+## 8. 맥북에서 Codex에게 바로 줄 수 있는 작업 지시 예시
+
+```text
+AGENTS.md, PROJECT.md, MACOS_SETUP.md를 먼저 읽고 현재 codex/macos-bringup 브랜치 목표 기준으로 가장 먼저 막히는 macOS 실행 문제부터 점검해줘. 관련 없는 리팩터링은 하지 말고, 최소 수정과 최소 검증으로 진행해줘.
+```
+
+## 9. 권장 점검 명령
 
 ```bash
 go test ./...
@@ -124,7 +153,7 @@ go test ./...
 go build ./cmd/pdfsplitter
 ```
 
-## 9. 맥북에서 막히기 쉬운 지점
+## 10. 맥북에서 막히기 쉬운 지점
 
 - `java`가 잡히지 않으면 썸네일 렌더링이 실패할 수 있습니다.
 - `xcode-select --install`이 안 되어 있으면 일부 빌드가 막힐 수 있습니다.

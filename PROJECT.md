@@ -29,6 +29,24 @@ PDF Splitter
 - 출력 기본 경로: 원본 PDF와 같은 폴더
 - 테마: 시스템 / 라이트 / 다크
 
+## 브랜치 전략
+
+- `master`: Windows 기준 안정 브랜치
+- `codex/macos-bringup`: macOS 실행/검증/초기 빌드 안정화 브랜치
+
+macOS 작업은 당분간 `codex/macos-bringup`에서 진행하고, 확인된 내용만 `master`로 반영합니다.
+
+## 현재 작업 브랜치 목표
+
+브랜치: `codex/macos-bringup`
+
+목표:
+
+- macOS에서 앱이 실제로 실행되는지 검증
+- 파일 선택, PDF 분석, 썸네일, 분할 저장의 macOS 동작 확인
+- `.app` 번들링 전 단계까지 필요한 수정 정리
+- 이후 서명/노타리제이션 준비를 위한 기반 확보
+
 ## 작업 목록
 
 ### 완료
@@ -57,6 +75,8 @@ PDF Splitter
 
 ### 진행 예정
 
+- macOS 파일 선택 동작 검증 및 수정
+- macOS PDFBox 경로/Java 실행 검증
 - macOS 드래그앤드롭 지원
 - 사용자 설정 저장
 - 최근 작업 파일 목록
@@ -83,10 +103,16 @@ PDF Splitter
 - [x] 보안 하드닝 적용
 - [x] 보안 점검 스크립트 추가
 - [x] 첫 Windows 릴리즈 패키징 스크립트 추가
+- [x] macOS 개발 인수인계 문서 추가
 - [ ] macOS 실기기 빌드 검증
-- [ ] GitHub 원격 저장소 연결
-- [ ] 첫 GitHub 릴리즈 게시
+- [ ] macOS 파일 선택 동작 검증
+- [ ] macOS 썸네일 렌더링 검증
+- [ ] macOS 분할 저장 검증
+- [x] GitHub 원격 저장소 연결
+- [x] 첫 GitHub 릴리즈 게시
 - [ ] govulncheck 환경 포함 자동 스캔
+- [ ] macOS `.app` 번들링
+- [ ] macOS 서명 및 노타리제이션
 
 ## 기술 스택
 
@@ -102,3 +128,4 @@ PDF Splitter
 - 썸네일은 `tools/pdfbox/pdfbox-app-3.0.7.jar` 기준으로 렌더링한다.
 - 위험한 PDF 기능은 분석 단계에서 먼저 차단한다.
 - PDF 관련 기능은 `internal/pdf`에 집중시켜 이후 병합/회전/추출 기능을 같은 계층에 추가한다.
+- macOS 작업 시작 전 `AGENTS.md`, `MACOS_SETUP.md`, `CONTRIBUTING.md`를 먼저 확인한다.
