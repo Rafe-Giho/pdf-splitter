@@ -1,0 +1,12 @@
+dist/
+bin/
+build/
+.gocache/
+.cache/
+cache/
+.tmp/
+*.exe
+*.app
+*.test
+*.out
+.DS_Store
