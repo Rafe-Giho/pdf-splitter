@@ -16,7 +16,11 @@
   실제 PDF 페이지 썸네일을 보면서 원하는 위치를 직접 나누는 GUI PDF 분할기입니다.
 </p>
 
-![PDF Splitter Preview](assets/readme-preview.png)
+## 화면 예시
+
+| 라이트 모드 | 다크 모드 |
+| --- | --- |
+| ![PDF Splitter Light](assets/readme-preview-light.png) | ![PDF Splitter Dark](assets/readme-preview-dark.png) |
 
 ## 개요
 

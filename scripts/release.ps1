@@ -65,6 +65,8 @@ Copy-Item -LiteralPath (Join-Path $root "README.md") -Destination (Join-Path $st
 Copy-Item -LiteralPath (Join-Path $root "CHANGELOG.md") -Destination (Join-Path $stageRoot "CHANGELOG.md") -Force
 Copy-Item -LiteralPath (Join-Path $root "VERSION") -Destination (Join-Path $stageRoot "VERSION") -Force
 Copy-Item -LiteralPath (Join-Path $root "assets\icon.png") -Destination (Join-Path $stageRoot "assets\icon.png") -Force
+Copy-Item -LiteralPath (Join-Path $root "assets\readme-preview-light.png") -Destination (Join-Path $stageRoot "assets\readme-preview-light.png") -Force
+Copy-Item -LiteralPath (Join-Path $root "assets\readme-preview-dark.png") -Destination (Join-Path $stageRoot "assets\readme-preview-dark.png") -Force
 Copy-Item -LiteralPath (Join-Path $root "assets\readme-preview.svg") -Destination (Join-Path $stageRoot "assets\readme-preview.svg") -Force
 Copy-Item -LiteralPath (Join-Path $root "assets\readme-preview.png") -Destination (Join-Path $stageRoot "assets\readme-preview.png") -Force
 Copy-Item -LiteralPath (Join-Path $root "LICENSE") -Destination (Join-Path $stageRoot "LICENSE") -Force
