@@ -7,13 +7,13 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Go-1.26+-00ADD8?logo=go&logoColor=white" alt="Go">
   <img src="https://img.shields.io/badge/GUI-Gio-1F2937" alt="Gio">
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS-334155" alt="Platform">
+  <img src="https://img.shields.io/badge/Platform-Windows%20First-334155" alt="Platform">
   <img src="https://img.shields.io/badge/License-Apache%202.0-4F46E5" alt="License">
   <img src="https://img.shields.io/badge/Security-Hardened-0F766E" alt="Security">
 </p>
 
 <p align="center">
-  실제 PDF 페이지 썸네일을 보면서 원하는 위치를 직접 나누는 GUI PDF 분할기입니다.
+  실제 PDF 페이지 썸네일을 보면서 원하는 위치를 직접 나누는 Windows 우선 GUI PDF 분할기입니다.
 </p>
 
 ## 화면 예시
@@ -32,6 +32,12 @@
 - 분할 완료 후 저장 위치 바로 열기
 - 시스템 / 라이트 / 다크 테마 지원
 - 커스텀 타이틀바 및 앱 아이콘 적용
+
+## 현재 상태
+
+- 현재 공개 릴리즈와 검증 기준은 Windows입니다.
+- macOS는 코드베이스와 빌드 스크립트만 준비된 상태입니다.
+- macOS 실기기 빌드, 실행 검증, 배포 패키징은 아직 완료되지 않았습니다.
 
 ## 주요 특징
 
@@ -89,16 +95,17 @@ go run ./cmd/pdfsplitter
 - `dist/windows/pdf-splitter.exe`
 - `pdfsplitter.exe`
 
-### macOS 빌드
+### macOS 빌드 참고
 
 ```bash
 chmod +x ./scripts/build-macos.sh
 ./scripts/build-macos.sh
 ```
 
-생성 파일:
+참고:
 
 - `dist/macos/pdf-splitter`
+- 아직 실기기 검증과 배포 패키징은 완료되지 않았습니다.
 
 ## 릴리즈 패키징
 
