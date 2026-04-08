@@ -1,0 +1,48 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="32" fill="#0F172A"/>
+  <rect x="32" y="32" width="1216" height="656" rx="28" fill="#111827"/>
+  <rect x="64" y="64" width="1152" height="64" rx="20" fill="#1E293B"/>
+  <rect x="92" y="84" width="22" height="22" rx="6" fill="#93C5FD"/>
+  <rect x="100" y="90" width="6" height="10" rx="3" fill="#EFF6FF"/>
+  <path d="M105 100L105 95C105 92 107 90 110 90H111" stroke="#EFF6FF" stroke-width="4" stroke-linecap="round"/>
+  <text x="132" y="106" fill="#F8FAFC" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="700">PDF Splitter</text>
+
+  <rect x="960" y="78" width="88" height="34" rx="10" fill="#334155"/>
+  <rect x="1058" y="78" width="88" height="34" rx="10" fill="#475569"/>
+  <rect x="1156" y="78" width="28" height="34" rx="10" fill="#334155"/>
+
+  <rect x="64" y="160" width="1152" height="148" rx="24" fill="#111827"/>
+  <text x="92" y="218" fill="#F8FAFC" font-size="44" font-family="Segoe UI, Arial, sans-serif" font-weight="700">페이지를 보면서 직접 나누는 PDF 분할기</text>
+  <text x="92" y="258" fill="#94A3B8" font-size="24" font-family="Segoe UI, Arial, sans-serif">실제 썸네일, 수동 구분선, 빠른 분할, 보안 하드닝까지 한 번에.</text>
+
+  <rect x="64" y="340" width="340" height="316" rx="24" fill="#172033"/>
+  <text x="92" y="392" fill="#F8FAFC" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">입력 파일</text>
+  <text x="92" y="426" fill="#94A3B8" font-size="18" font-family="Segoe UI, Arial, sans-serif">PDF 선택 또는 경로 직접 입력</text>
+  <rect x="92" y="456" width="220" height="52" rx="14" fill="#3B82F6"/>
+  <text x="202" y="489" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">PDF 파일 선택</text>
+  <rect x="92" y="528" width="284" height="50" rx="14" fill="#233047"/>
+  <text x="116" y="560" fill="#CBD5E1" font-size="18" font-family="Segoe UI, Arial, sans-serif">빠른 분할 켜짐</text>
+  <rect x="92" y="596" width="132" height="36" rx="10" fill="#1D4ED8"/>
+  <text x="158" y="620" text-anchor="middle" fill="#DBEAFE" font-size="16" font-family="Segoe UI, Arial, sans-serif">페이지 1마다</text>
+
+  <rect x="432" y="340" width="784" height="316" rx="24" fill="#172033"/>
+  <text x="460" y="392" fill="#F8FAFC" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">페이지 구분선</text>
+  <text x="460" y="426" fill="#94A3B8" font-size="18" font-family="Segoe UI, Arial, sans-serif">리스트형 / 격자형 보기와 확대 미리보기를 지원합니다.</text>
+
+  <g transform="translate(460 460)">
+    <rect width="152" height="150" rx="18" fill="#E2E8F0"/>
+    <rect x="12" y="12" width="128" height="104" rx="12" fill="#FFFFFF"/>
+    <rect x="44" y="126" width="64" height="10" rx="5" fill="#64748B"/>
+    <rect x="170" width="152" height="150" rx="18" fill="#DBEAFE"/>
+    <rect x="182" y="12" width="128" height="104" rx="12" fill="#FFFFFF"/>
+    <rect x="214" y="126" width="64" height="10" rx="5" fill="#2563EB"/>
+    <rect x="340" width="152" height="150" rx="18" fill="#E2E8F0"/>
+    <rect x="352" y="12" width="128" height="104" rx="12" fill="#FFFFFF"/>
+    <rect x="384" y="126" width="64" height="10" rx="5" fill="#64748B"/>
+    <rect x="510" width="152" height="150" rx="18" fill="#E2E8F0"/>
+    <rect x="522" y="12" width="128" height="104" rx="12" fill="#FFFFFF"/>
+    <rect x="554" y="126" width="64" height="10" rx="5" fill="#64748B"/>
+    <rect x="155" y="64" width="10" height="24" rx="5" fill="#F59E0B"/>
+    <rect x="325" y="64" width="10" height="24" rx="5" fill="#F59E0B"/>
+  </g>
+</svg>

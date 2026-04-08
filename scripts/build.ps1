@@ -3,6 +3,7 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root "dist\\windows"
 $output = Join-Path $dist "pdf-splitter.exe"
+$rootOutput = Join-Path $root "pdfsplitter.exe"
 $pdfboxDist = Join-Path $dist "tools\\pdfbox"
 $env:GOCACHE = Join-Path $root ".gocache"
 
@@ -37,6 +38,8 @@ if ($rsrc) {
 go build -trimpath -ldflags "-s -w -H windowsgui" -o $output ./cmd/pdfsplitter
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+Copy-Item -LiteralPath $output -Destination $rootOutput -Force
+
 $pdfboxCandidates = @(
   (Join-Path $root "tools\\pdfbox\\pdfbox-app-3.0.7.jar"),
   (Join-Path $root "tools\\pdfbox\\pdfbox-app-3.0.3.jar")
@@ -49,3 +52,4 @@ foreach ($candidate in $pdfboxCandidates) {
 }
 
 Write-Host "Built: $output"
+Write-Host "Synced: $rootOutput"

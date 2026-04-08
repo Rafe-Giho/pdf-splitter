@@ -33,6 +33,7 @@ if (Test-Path $stageRoot) {
 }
 New-Item -ItemType Directory -Force -Path $stageRoot | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $stageRoot "tools\pdfbox") | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $stageRoot "assets") | Out-Null
 
 $exePath = Join-Path $root "dist\windows\pdf-splitter.exe"
 if (-not (Test-Path $exePath)) {
@@ -63,6 +64,9 @@ Copy-Item -LiteralPath $pdfboxJar -Destination $pdfboxStagePath -Force
 Copy-Item -LiteralPath (Join-Path $root "README.md") -Destination (Join-Path $stageRoot "README.md") -Force
 Copy-Item -LiteralPath (Join-Path $root "CHANGELOG.md") -Destination (Join-Path $stageRoot "CHANGELOG.md") -Force
 Copy-Item -LiteralPath (Join-Path $root "VERSION") -Destination (Join-Path $stageRoot "VERSION") -Force
+Copy-Item -LiteralPath (Join-Path $root "assets\icon.png") -Destination (Join-Path $stageRoot "assets\icon.png") -Force
+Copy-Item -LiteralPath (Join-Path $root "assets\readme-preview.svg") -Destination (Join-Path $stageRoot "assets\readme-preview.svg") -Force
+Copy-Item -LiteralPath (Join-Path $root "assets\readme-preview.png") -Destination (Join-Path $stageRoot "assets\readme-preview.png") -Force
 Copy-Item -LiteralPath (Join-Path $root "LICENSE") -Destination (Join-Path $stageRoot "LICENSE") -Force
 Copy-Item -LiteralPath (Join-Path $root "NOTICE") -Destination (Join-Path $stageRoot "NOTICE") -Force
 Copy-Item -LiteralPath (Join-Path $root "THIRD_PARTY_NOTICES.md") -Destination (Join-Path $stageRoot "THIRD_PARTY_NOTICES.md") -Force
